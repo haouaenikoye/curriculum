@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="jquery.ripples.js"></script>
+		<script src="functions.js"></script>
+		<link href="googleFonts.css" rel="stylesheet">
+		<link href="mainStyle.css" media="screen" rel="stylesheet">
+		<link href="print.css" media="print" rel="stylesheet">
+		<link rel="icon" href="cerveaux.png" type="image/png">
+		<title>Idrissa Enikoye Haoua</title>
+	</head>
+	<body>
+		<div id="body" class="jquery-ripples">
+			<div id="semi">
+				<div id="howToBG">
+					<div id="howTo">
+						<h1>Idrissa Enikoye Haoua</h1>
+						<h2>CV professionnel</h2>
+						<img src="Avatar.png" alt="Avatar">
+						<p>Bienvenue sur mon Cv <a href="">personnel</a>.
+							<br><br><br>
+							<br><br><br>
+							Ce site Web a été conçu comme un CV pour montrer ce que je fais. J'adore la cybersécurité et tous ce qui concerne les codes. Je suis formé sous la direction de Abil Houssein,Mes amis de Codeloccol et mon cher Tonton Google. Dans mon temps libre, je recherche des vulnérabilités sur les applications Web...bref<br></p>
+							<br><br><br>
+						<p>Cliquez à tout moment sur l'icône d'impression pour afficher la version imprimable </p>
+						<br><br><br>
+						<p>S'amuser</p>
+						<button id="startGame" onclick="startGame();">Cliquez pour commencer</button>
+					</div>
+				</div>
+				<div id="mobileAvatar" class="avatar"></div>
+				<div id="printAvatar" class="avatar"></div>
+				<div id="mobileTitle">
+					<h1>Mon curiculuim vitae</h1>
+					<p>Veuillez visiter ce site sur un ordinateur ou faire pivoter votre écran pour une expérience complète</p>
+				</div>
+				<div id="printTitle">
+					<h1>Idrissa Enikoye Haoua<br></h1>
+					<p>Veuillez visiter <a href="">mon Cv</a> sur un ordinateur pour une expérience complète</p>
+				</div>
+				<div onclick="window.print();">
+					<div class="printer"></div>
+					<div id="printCaption" style="text-align:center">cliquez pour imprimer</div>
+				</div>
+				<div class="detail" id="basicInfo">
+					<span class="return" onmouseover="hideInfo('basicInfo');">Retour </span>
+					<div class="detailContent">
+						<h1>Mes informations de base</h1>
+						<p>Hello!
+							Je me présente Idrissa Enikoye Haoua, jeune étudiante en Sociologie à l'université Abdou Moumouni de Niamey.
+							<br>
+						Passionnée de l'informatique , je me suis inscrite à Codeloccol, Prémière école de Codage Numérique au Niger.
+						<br>
+                        C'est une fierté pour moi en tant que femme d'etre dans un domaine qui autrefois etait destiné uniquement qu'aux hommes.
+						</p>
+						<br>
+						<p>
+							En savoir plus sur mes compétences
+						</p>
+						<ul style="list-style-type:none;">
+							<li>JAVASCRIPT: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>WORDPRESS: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;<span style="color:yellow;">&starf;</span></span></li>
+							<li>JQuery: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>HTML: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>CSS: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>BOOSTRAP:<span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>	
+						</ul>
+						
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="contactInfo">
+					<span class="return" onmouseover="hideInfo('contactInfo');">Retour</span>
+					<div class="detailContent">
+						<h1>Mes informations de contact</h1>
+						<ul class="colList">
+							<li>Nom complet:Idrissa Enikoye Haoua</li>
+							<li>Adresse e-mail: <a target="_blank" href="ienikoye@gmail.com">ienikoye@@gmail.com</a></li>
+							<li>Téléphone portable: (+227) 93 33 70 28</li>
+							<li>Quartier: Recasement 1ere latérite</li>
+							<li>Facebook: <a target="_blank" href="https://m.facebook.com/home.php?_rdr">https://m.facebook.com/home.php?_rdr</a></li>
+							<li>Github: <a target="_blank" href="https://github.com/haouaenikoye">https://github.com/haouaenikoye</a></li>
+							<li>LinkedIn <a target="_blank" href="https://www.linkedin.com/in/hainikoye/">https://www.linkedin.com/in/hainikoye/e</a></li>
+						</ul>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="skills">
+					<span class="return" onmouseover="hideInfo('skills');">Retour</span>
+					<div class="detailContent">
+						<h1>Mes compétences</h1>
+						<ul class="colList">
+							<div class="row">
+								<!--DEBUT FONT END SKILLS-->
+								<div class="col-md-6 text-center">
+									<h2 class="py-4">FRONT-END</h2>
+									<div class="row">
+										<div class="col-md-12 d-flex justify-content-around flex-wrap" data-aos="flip-up" data-aos-anchor-placement="bottom-bottom">
+											<div class="circle mt-3 mb-3">
+												<p>HTML</p>
+												<div class="htmlCircle">
+													<div class="html-circle-animation-progress">
+														<div class="positionBlock">
+															<div class="htmlImg"></div>
+															<div class="htmlText"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="circle mt-3 mb-3">
+												<p>CSS</p>
+												<div class="cssCircle">
+													<div class="css-circle-animation-progress">
+														<div class="positionBlock">
+															<div class="cssImg"></div>
+															<div class="cssText"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="circle mt-3 mb-3">
+												<p>JAVASCRIPT</p>
+												<div class="jsCircle">
+													<div class="js-circle-animation-progress">
+														<div class="positionBlock">
+															<div class="jsImg"></div>
+															<div class="jsText"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<!--END FONT END SKILLS-->
+							</div>
+						</div>
+						<!--START FRAMWORK & LIBRARY-->
+						<div class="col-12 text-center mt-3">
+							<h2 class="py-4">FRAMWORK, LIBRARY & CMS</h2>
+							<div class="row">
+								<div class="col-md-12 d-flex justify-content-around flex-wrap" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
+									<div class="circle mt-3 mb-3">
+										<p>JQUERY</p>
+										<div class="jqCircle">
+											<div class="jq-circle-animation-progress2">
+												<div class="positionBlock">
+													<div class="jqImg"></div>
+													<div class="jqText"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="circle mt-3 mb-3">
+										<p>BOOTSTRAP</p>
+										<div class="bsCircle">
+											<div class="bs-circle-animation-progress">
+												<div class="positionBlock">
+													<div class="bsImg"></div>
+													<div class="bsText"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="circle mt-3 mb-3">
+										<p>WORDPRESS</p>
+										<div class="wordpressCircle">
+											<div class="wp-circle-animation-progress">
+												<div class="positionBlock">
+													<div class="wpImg"></div>
+													<div class="wpText"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--END FRAMWORK & LIBRARY-->
+						<!--START TOOLS-->
+						<div class="col-md-12 text-center mt-3">
+							<h1 class="py-4">OUTILS <i class="fas fa-wrench"></i></h1>
+							<div class="row" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+								<div class="col-12">
+									<img src="assets/img/terminal.png" width="100" height="100" class="m-4" alt="terminal"/>
+									<img src="assets/img/chrome.png" width="100" height="100" class="m-4" alt="chrome" />
+									<img src="assets/img/filezilla.png" width="100" height="100" class="m-4" alt="filezilla"/>
+									<img src="assets/img/github1.png" width="100" height="100" class="m-4" alt="github"/>
+								</div>
+								<div class="col-12">
+									<img src="assets/img/visualstudio.png" width="100" height="100" class="m-4" alt="visualstudio"/>
+									<img src="assets/img/windows.png" width="100" height="100" class="m-4" alt="windows"/>
+									<img src="assets/img/office.png" width="100" height="100" class="m-4" alt="office360"/>
+								</div>
+								<div class="col-12">
+									<img src="assets/img/trello.png" width="100" height="100" class="m-4" alt="trello"/>
+									<img src="assets/img/ps.png" width="100" height="100" class="m-4" alt="ps">
+									<img src="assets/img/phpmyadmin.png" width="100" height="100" class="m-4" alt="phpmyadmin"/>
+								</div>
+							</div>
+						</div>
+						<!--ENDDEBUT TOOLS-->
+					</div>
+				</section>
+				<!--END SECTION SKILLS-->
+						</ul>
+						
+
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="hobbies">
+					<span class="return" onmouseover="hideInfo('hobbies');">Retour </span>
+					<div class="detailContent">
+						<h1>Mes Loisirs</h1>
+						<div class="col-md-12">
+							<div class="single-hobbies-logo">
+								<img src="assets/img/reportage.jpeg "class="m-4" alt="Documentaire !"/>
+								<img src="assets/img/musique.jpg" class="m-4" alt="musique"/>
+								<img src="assets/img/lecture.jpeg" class="m-4" alt="Lecture"/>
+							</div>
+							<div class="row" data-aos="flip-up" data-aos-anchor-placement="top-bottom">
+								<div class="col-md-12">
+									<div class="single-hobbies-logo">
+										<img src="assets/img/programmation.jpeg" class="m-4" alt="informatique"/>
+										<img src="assets/img/recherche.jpeg" class="m-4" alt="Recherche"/>
+										<img src="assets/img/jeux.jpeg" class="m-4" alt="jeux vidéo"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="workExperience">
+					<span class="return" onmouseover="hideInfo('workExperience');">Retour </span>
+					<div class="detailContent" syle="text-align:left">
+						<h1>Mon experience professionnelle</h1>
+						<ol style="text-align:left;">
+							<li>
+								<strong>Du 28 Octobre 2020 au 23 Janvier 2021 Etudiante à Codeloccol</strong>
+								<br><br><br>
+								Titre Professionnel « Développeur web »
+								<ul class="card-text">
+                                    <li>Développer une application client-serveur.</li>
+                                    <li>Maquetter une application.</li>
+                                    <li>Concevoir une base de données.</li>
+                                    <li>Mettre en place un base de données.</li>
+                                    <li>Développer des composants d'accès aux données.</li>
+                                </ul>
+								<br><br><br><br>
+								<br><br><br>
+								<strong> 05 au 07 Novembre 2020 FITIC Forum Interparlementaire TIC de l'espace Cedeao</strong>
+								<br>
+								La 2ème édition du Forum Interparlenentaire de la CEDEAO sur les technologies de l'Information et de la communication qui est regroupé par plusieurs panels au Palais des Congrès de Niamey.
+								<br><br><br><br>
+								<strong>    29 Octobre 2020 au 04 Novembre 2020 Grande Rencontre Citoyenne</strong>
+								<br>
+								La grande rencontre citoyenne organisée par le ministère de la Renaissance Culturelle, des Arts et de la Modernisation Sociale, en collaboration avec l’association CIMOM. Cette rencontre citoyenne a regroupé autour du chef du gouvernement les jeunes venus de toutes les régions du Niger. Elle vise essentiellement à échanger à bâton rompus sur les aspirations de cette frange de la population qui constitue le socle du développement socio-économique du Niger. L’objectif ultime de cette rencontre historique entre les jeunes et les autorités du pays est de perpétuer cette démarche dans la perspective d’un dialogue intergénérationnel, gage d’une jeunesse responsable résolument engagée pour la paix et la quiétude sociale.
+								<br><br><br><br>
+		                        <strong> De Janvier 2020 au Septembre 2020 Secrètariat bureautique</strong>
+								<br><br><br><br>
+								<strong> Fevrier 2019 Séminaire sur la pratique du développement personnel </strong>:La réussite dans l'action 
+							     <br><br><br>
+								<strong> Mars 2018 Formation pratique du Logistique office informatique</strong>
+								<br><br><br>
+								<strong> Avril 2014 formation sur la santé et réproduction</strong>
+								<br><br><br>
+								<strong> Juin 2012 Atelier de renforcement des capacités des jeunes scolaires contre les IST/VIH/SIDA</strong>
+								<br><br><br>
+								<strong> 201O_2015 ONG FONDEI MABORI</strong>:Le Port du casques et la ceinture au volan
+								<br><br><br><br>
+								<script>
+									function displayCoreMonitor()
+									{
+										hideInfo('workExperience');
+										displayInfo('projects');
+										window.location.hash='COREmonitor';
+										window.location.hash='';
+									}
+								</script>
+							</li>
+							</ol>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="education">
+					<span class="return" onmouseover="hideInfo('education');">Retour </span>
+					<div class="detailContent" syle="text-align:left">
+						 <h1> Langues</h1>
+						<p style="text-align:left">
+							<strong>Anglais</strong><br>
+							<strong>A.D.U</strong><br>
+						</p>
+						<ul class="colList">
+							<li>Francais: Bien</li>
+							<li>Anglais: Passable</li>
+							<li>Zarma:Bien</li>
+							<li>Haoussa:Passable</li>
+
+							<br><br><br>
+
+							<p style="text-align:left">
+							<li>Technologie des applications informatiques: 57%</li>
+							<li>Sciences de la vie: 51%</li>
+						</ul>
+						</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="projects">
+					<span class="return" onmouseover="hideInfo('projects');">Retour </span>
+					<div class="detailContent" syle="text-align:left">
+						<h1>Mes projets</h1>
+						<p style="text-align:left">
+							<strong>Projets de ma carrière</strong><br>
+							Je ne peux pas fournir de captures d'écran ni de code source de ces projets, car cela enfreindra les politiques de l'entreprise. Cependant, voici une liste de ce que j'ai fait. <br>
+                            (Survolez ou cliquez sur chaque élément pour plus de détails)
+							<ol style="text-align:left">
+									<br><br><br>
+									<ol>
+										<p>Projets: Reproduction Front site web
+											<li> E-commerce</li>
+                                            <li>Plateforme de voyage</li>
+											<li>Plateforme de maison de location</li>
+											<li>Plateforme de billetterie en ligne</li>
+											<li>Plateforme d'agriculture</li>
+										    <li>Salon de béauté</li>
+											<li>Plateforme de photographie</li>
+											<li>Plateforme d'infographie</li>
+											<li>Plateforme de formation bureautique</li>
+											<li>Barber Shop</li>
+											<li>Maison d'esthétique</li>
+											<li>Plateforme d'èlèvage</li>
+											<li>Site immobilier..(projet titre pro). </li>
+											</p>
+									</ol>
+							</ol>
+						<p style="text-align:left">
+							<strong>Projets réalisés en ma qualité</strong>
+						</p>
+						<ol style="text-align:left">
+							<li>
+								<a target="_blank" href="https://github.com/haouaenikoye">Github</a><br>
+								<div id="githubRepos"></div>
+								<script>
+var result = "";
+$.ajax({
+	url:"https://github.com/haouaenikoye",
+	async: false,
+	success:function(data) {
+		handleRepos(data); 
+	}
+ });
+
+function handleRepos(data)
+{
+	result = "<ol>";
+	for(i=0;i<data.length;i++)
+	{
+		result = result + "<li onclick=\"snackbar($(this)[0].title,15000);\" title=\"" + data[i]['description'] +"\"><a href=\"" + data[i]['html_url'] + "\" target=\"_blank\">" + data[i]['name'] + "</a><br><strong>Languages:</strong>";
+		$.ajax({
+			async: false,
+			url: data[i]['languages_url'],
+			success: function(msg){
+				result = result + "<ul>";
+				var total = 0;
+				var language;
+				for(language in msg)
+				{
+					amount = msg[language];
+					total += msg[language];
+				}
+				for(language in msg)
+				{
+					percent = ((msg[language]/total) * 100).toFixed(2);
+					result = result + "<li>" + language + ": " + percent + "%</li>";
+				}
+				result = result + "</ul>";
+			}
+		});
+		result = result + "</li>"
+	}
+	result = result + "</ol>"
+	document.getElementById('githubRepos').innerHTML = result;
+}
+								</script>
+							</li>
+						</ol>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div id="assets">
+					<div id="snackbarContainer" style="display: none;">
+						<div id="snackbar"></div>
+					</div>
+					<div id="playerMover">
+					<div id="playerRotator">
+						<div id="player" class="playerOpen"></div>
+					</div>
+				</div>
+					<div id="guideMover">
+						<div id="sharkRotator">
+							<div id="guide"  onmouseover="lunch();" class="guideOpen"></div>
+						</div>
+					</div>
+					<div id="lifesaverContainer">
+						<div class="lifesaver" onmouseover="displayInfo('basicInfo');" id="ring_basicInfo">
+							<div>Information<br>essentielle</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('skills');" id="ring_skills">
+							<div>Compétence</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('hobbies');" id="ring_hobbies">
+							<div>Passe-tempss</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('workExperience');" id="ring_workExperience">
+							<div style="font-size:0.7em;">Travail<br>Experiences</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('education');" id="ring_education">
+							<div>Compétences</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('projects');" id="ring_projects">
+							<div>Projets</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('contactInfo');" id="ring_contactInfo">
+							<div>Contacte<br>Information</div>
+						</div>
+					</div>
+					<!--BUBBLES--><div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+					</div>
+					<!--FISH--><div>
+						<div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div>
+						<div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script>
+moveBubbles();
+moverole();
+setInterval(function(){
+if($(window).innerWidth() >= 600)
+{
+	var player = document.getElementById('player');
+	if(player.className == 'playerOpen')
+	{
+		player.className = 'playerClosed';
+	}
+	else
+	{
+		player.className = 'playerOpen';
+	}
+	var guide = document.getElementById('guide');
+	if(guide.className == 'guideOpen')
+	{
+		guide.className = 'guideClosed';
+	}
+	else
+	{
+		guide.className = 'guideOpen';
+	}
+}
+},250);
+setInterval(function(){moveBubbles();},4000);
+setInterval(function(){moveJellyfish();flashReturn();},2000);
+
+	</script>
+	</body>
+</html>
